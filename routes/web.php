@@ -14,6 +14,14 @@ Route::get('/', 'CatalogoControlador@catalogo');
 
 Route::get('/listado', 'CatalogoControlador@listado');
 
+Route::post('/nuevoProducto', 'CatalogoControlador@nuevoProducto');
+
+Route::get('/borrarProducto', 'CatalogoControlador@borrarProducto');
+
+Route::get('/buscarProducto', 'CatalogoControlador@buscarProducto');
+
+Route::post('/actualizarProducto', 'CatalogoControlador@actualizarProducto');
+
 /*
 Route::get('/', function () {
     return view('catalogo');
